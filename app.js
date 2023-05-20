@@ -7,7 +7,7 @@ const mongoose = require('mongoose')
 
 const {mediaDoAlunoMaterias,mediadoAluno} = require('./services/serviceAluno')
 const {mediaProf} = require('./services/serviceProf')
-
+console.log("Seu programa está funcionando")
 
 
 app.use(express.json());
