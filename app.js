@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 const router = require('./routes/route')
 
+
 const mongoose = require('mongoose')
 
 const {mediaDoAlunoMaterias,mediadoAluno} = require('./services/serviceAluno')
@@ -32,15 +33,10 @@ mongoose.connect(
 //mediaDoAlunoMaterias("001")
 //mediaProf("123")
 
-const axios = require("axios")
 
-function teste(){
-axios.get("https://itunes.apple.com/search?term=jack+johnson").then((response)=>{
-    console.log(response.data)
-}).catch((err)=>{console.log(err)})
-}
 
-teste()
+
+
 
 app.listen(8080, (req, res) => {
     console.log("Servidor rodando")

@@ -8,10 +8,11 @@ searchAll = async (req) => {
 }).catch((err)=>{console.log(err)})
 }
 
-createMusic = async (req) =>{
-    return axios.post('https://itunes.apple.com/create',req.body).then((response)=>{
-    return response.data
-    }).catch((err)=>{console.log(err)})
-}
+// createMusic = async (req) =>{
+//     return axios.post('https://itunes.apple.com/create',req.body).then((response)=>{
+//     return response.data
+//     }).catch((err)=>{console.log(err)})
+// }
+// 
 
-module.exports = {searchAll, createMusic};
+module.exports = {searchAll};
