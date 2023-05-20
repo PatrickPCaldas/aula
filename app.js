@@ -8,7 +8,7 @@ const mongoose = require('mongoose')
 const {mediaDoAlunoMaterias,mediadoAluno} = require('./services/serviceAluno')
 const {mediaProf} = require('./services/serviceProf')
 
-
+console.log("Coisa modificada")
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
